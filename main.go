@@ -1,5 +1,7 @@
 package main
 
+// 39342 total customer
+
 import (
 	"bufio"
 	"fmt"
@@ -219,7 +221,7 @@ func printNAPeriod(companies CompaniesType, period string) {
 
 	n := 0
 	for _, company := range companies.Companies {
-		if company.Period == period {
+		if company.Period == period || company.Period == "190001" {
 			n++
 		}
 	}
